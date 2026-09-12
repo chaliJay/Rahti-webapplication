@@ -1,6 +1,7 @@
 FROM httpd:alpine
 COPY index.html /usr/local/apache2/htdocs/
 COPY test.txt /usr/local/apache2/htdocs/
+COPY assets /usr/local/apache2/htdocs/assets
 
 
 # Rahti runs containers as an arbitrary non-root UID by default (see the box below) —
